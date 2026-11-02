@@ -1,0 +1,41 @@
+# Local source data and organizer-supplied materials (not licensed by this project)
+/Data Source/
+/DataDNA Dataset Challenge - 2026- 11 - Health System Performance/
+
+# Generated evidence, logs, and draft exports; scripts remain eligible for Git
+/_analyst_workspace/outputs/
+*.log
+
+# Credentials and local environment settings
+.env
+.env.*
+!.env.example
+.credentials/
+credentials*.json
+secrets*.json
+*.pem
+*.key
+*.pfx
+
+# Power BI local settings and caches; retain report/model definitions and layouts
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/.pbi/unappliedChanges.json
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor, operating-system, and temporary files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.bak
+~$*
