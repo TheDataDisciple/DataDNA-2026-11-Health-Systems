@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Health System Perfomance Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2a038dca-54d2-4717-ad4b-e382201baf97"
+  }
+}

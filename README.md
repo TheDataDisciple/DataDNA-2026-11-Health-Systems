@@ -12,7 +12,9 @@ The detailed review is currently a local working file at `_analyst_workspace/out
 
 ## Purpose and current status
 
-The intended report will examine access, capacity, workforce, spending, and outcomes using Power BI. The project is currently at source validation: no Power BI report or validated health-system findings have been published. Comparisons and trends depend on resolving the source issues and documenting defensible metric definitions.
+The project is implementing a Health System Evidence Readiness report in Power BI, supported by native Excel preparation, validation and PivotTable/PivotChart EDA. The final presentation is one readable dashboard image, with a working native report behind it. Health-system comparisons and trends remain unsupported until their source requirements are resolved.
+
+Implementation is governed by the [technical specification](Documentation/PROJECT_TECHNICAL_SPEC.md), [current status and resume record](Documentation/PROJECT_STATUS.md), [winner review and health blueprint](Documentation/WINNER_REVIEW_AND_HEALTH_BLUEPRINT.md), and [decision log](Documentation/DECISION_LOG.md). These records distinguish technical delivery, analytical support, documentation synchronization and external submission.
 
 ## Workflow
 
@@ -28,7 +30,7 @@ Load only the canonical CSVs, not the reference duplicates in the supplied packa
 
 ## Project layout
 
-The local folder map and file-placement rules are in [Project structure](Documentation/PROJECT_STRUCTURE.md). This initial commit contains only the README, license, ignore rules, and folder guide; the remaining folders describe the local workflow and future deliverables.
+The local folder map and file-placement rules are in [Project structure](Documentation/PROJECT_STRUCTURE.md). Source data, generated evidence and data-bearing binaries remain local. Original implementation code, maintained documentation and Power BI project definitions are eligible for deliberate inclusion.
 
 | Folder | Purpose |
 |---|---|

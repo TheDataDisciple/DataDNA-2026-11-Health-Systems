@@ -21,6 +21,14 @@ secrets*.json
 **/.pbi/localSettings.json
 **/.pbi/cache.abf
 **/.pbi/unappliedChanges.json
+**/.pbi/editorSettings.json
+
+# Data-bearing binaries are local deliverables, not public repository sources
+*.pbix
+*.pbit
+*.xlsx
+**/node_modules/
+/_analyst_workspace/notes/notion_project_registry.json
 
 # Python environments and caches
 .venv/

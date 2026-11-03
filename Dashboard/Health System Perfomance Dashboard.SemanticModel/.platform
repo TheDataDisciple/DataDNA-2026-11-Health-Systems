@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Health System Perfomance Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cccf7b6b-5745-47b2-9fe9-cb428ea811e1"
+  }
+}

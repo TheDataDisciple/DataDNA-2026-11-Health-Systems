@@ -21,8 +21,8 @@ DataDNA-Dataset-Challenge-2026-11-Health-System-Performance/
 │   │   ├── dim_health_system.csv
 │   │   ├── dim_workforce.csv
 │   │   └── fact_health_performance.csv
-│   ├── In Progress/                  Transformed tables still being checked
-│   └── Ready To Work/                Validated inputs for Power BI
+│   ├── In Progress/                  Provisional preparation and EDA work
+│   └── Ready To Work/                Complete versioned audit releases when built
 │
 ├── DataDNA Dataset Challenge - 2026- 11 - Health System Performance/
 │   ├── CHALLENGE_BRIEF.md             Preserved supplied reference package
@@ -30,7 +30,11 @@ DataDNA-Dataset-Challenge-2026-11-Health-System-Performance/
 │   └── docs/                         Supplied dictionary, schema and validation
 │
 ├── Documentation/
-│   └── PROJECT_STRUCTURE.md          This folder map and placement rules
+│   ├── PROJECT_STRUCTURE.md          This folder map and placement rules
+│   ├── PROJECT_TECHNICAL_SPEC.md     Approved v1.1 implementation contract
+│   ├── PROJECT_STATUS.md             Verified checkpoint and next executable action
+│   ├── DECISION_LOG.md               Implementation choices and blueprint deviations
+│   └── WINNER_REVIEW_AND_HEALTH_BLUEPRINT.md  Winner lessons and readiness blueprint
 │
 ├── Exports/
 │   ├── Images/                       Finished dashboard screenshots
@@ -41,10 +45,16 @@ DataDNA-Dataset-Challenge-2026-11-Health-System-Performance/
     ├── scripts/                      Python, PowerShell and SQL scripts
     ├── notes/                        Investigation notes and decision records
     └── outputs/
-        └── initial_review/           Source profiling and verification evidence
+        ├── initial_review/           Initial source profiling and verification evidence
+        ├── data_preparation/         Excel conversion, quality review and verification
+        └── winner_review/            Reference images, provenance and readiness reconciliation
 ```
 
-Bracketed Power BI files are future files, not files already created. The data staging folders, assets and export folders are currently empty.
+On 3 November, the user created `Health System Perfomance Dashboard.pbip` with its matching `.Report` and `.SemanticModel` folders in `Dashboard/`. Preserve that active project's supplied filename and keep its components together.
+
+Canonical Original copies have now been restored and hash-verified. Existing CSVs directly under `Data Source/` are preserved legacy copies; do not load them as additional inputs. Earlier conversion evidence describes five per-table Excel workbooks, but those workbook artifacts were absent at implementation startup. `In Progress/` and `Ready To Work/` are currently empty; native workbook and audit-release creation remain pending.
+
+Versioned audit releases will use `Data Source/Ready To Work/<release_id>/` and include a complete manifest. Promotion validates the audit inputs and their lineage; it does not certify the source health observations. Prepared-stage results must be labelled separately from raw-snapshot diagnostics.
 
 ## GitHub publication
 
@@ -61,7 +71,7 @@ The initial full-file review found errors in the organizer-supplied CSVs. Preser
 | `.pbip` / `.pbix` and generated Power BI project folders | `Dashboard/` |
 | Theme JSON, SVG icons, backgrounds used by the report | `Dashboard/Assets/` |
 | Original organizer CSVs | `Data Source/Original/` |
-| Provisional transformed data | `Data Source/In Progress/` |
+| Excel working copies (`.xlsx`); provisional transformed data | `Data Source/In Progress/` |
 | Validated tables that will actually feed Power BI | `Data Source/Ready To Work/` |
 | Supplied briefs, dictionaries and schemas | The preserved supplied package at the project root |
 | Agreed KPI definitions, model notes and project decisions | `Documentation/` |
@@ -90,3 +100,11 @@ The data flow is **Original → In Progress → Ready To Work → Power BI → E
 - Retained your existing `In Progress/` and `Ready To Work/` folders, and created destinations for Power BI assets and finished exports.
 
 The local relocation record is at `_analyst_workspace/outputs/folder_organization.json`. The initial source review is at `_analyst_workspace/outputs/initial_review/DATA_REVIEW.md`. These working evidence files are not published in the initial commit.
+
+The Excel preparation review is at `_analyst_workspace/outputs/data_preparation/DATA_IMPROVEMENT_REVIEW.md`. That folder also holds the issue register, conversion manifests, preview images and independent verification. The converter and reviewer stay under `_analyst_workspace/scripts/`; no assistant logs or intermediate files belong in `In Progress/`.
+
+## Winner review and observed source locations — 3 November 2026
+
+The maintained winner comparison and three-page Power BI readiness specification are in `Documentation/WINNER_REVIEW_AND_HEALTH_BLUEPRINT.md`. Research notes are in `_analyst_workspace/notes/winner_review_research.md`; reference images and hash/count verification are in `_analyst_workspace/outputs/winner_review/`. Reproduce this task's local evidence check with `_analyst_workspace/scripts/verify_winner_review_evidence.py`.
+
+The folder map above remains the agreed target structure. At this review, the five raw CSVs were found directly under `Data Source/`; their documented `Data Source/Original/` paths were absent. Their hashes exactly match the initial review and the preserved package copies. The discrepancy is recorded in `winner_review/local_evidence_verification.json`; this review did not move the files, change their contents, or approve a structural migration. Resolve the source-location discrepancy before configuring a Power BI refresh.
