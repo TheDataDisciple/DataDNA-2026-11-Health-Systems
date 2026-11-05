@@ -1,3 +1,4 @@
-database
-	compatibilityLevel: 1606
+/// Reset of the user-created project after removal of the superseded assistant-built audit implementation.
+database HealthSystemPerformance_EmptySeed
+	compatibilityLevel: 1601
 

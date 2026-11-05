@@ -1,5 +1,7 @@
 # Winning dashboards lead to a decision: lessons for November Health
 
+> Current scope (5 November 2026): presentation lessons remain useful. The former readiness/audit design below is historical and superseded by the Excel cleaning and EDA specification. Do not restart the removed audit implementation.
+
 ## Executive summary
 
 The strongest transferable feature is a **complete decision journey**: establish the problem, explain the important differences, and end with a justified priority. Visual polish makes that journey easier to follow; it does not establish that the analysis is correct.

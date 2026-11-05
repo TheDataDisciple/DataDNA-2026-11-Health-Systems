@@ -2,6 +2,8 @@
 
 Keep assistant-created working material here, separate from Power BI files and source data.
 
+Current native Excel cleaning and EDA uses `prepare_excel_eda.py`, `build_excel_cleaning_eda.ps1`, `finish_excel_eda.ps1`, `inspect_excel_eda.ps1`, `verify_excel_eda.py`, `NativeCsvBridge.cs` and `powerquery/ExcelCleaningEDA.m`. See `Documentation/REPRODUCTION_GUIDE.md`. Current generated evidence is in `outputs/excel_cleaning_eda/`; cleanup receipts and one-time scripts are in `outputs/project_cleanup/`. Earlier initial review and working-copy evidence below is retained context.
+
 - `scripts/`: reproducible analysis and validation code.
 - `notes/`: provisional findings, assumptions and decision notes.
 - `outputs/<task_name>/`: generated evidence, logs and draft exports.
