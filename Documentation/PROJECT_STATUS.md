@@ -8,7 +8,7 @@ Updated 5 November 2026. Current task: native Excel cleaning and PivotTable/Pivo
 |---|---|
 | Excel delivery | Complete. One native workbook, five prepared CSVs, 65 field profiles, seven PivotTables and seven linked PivotCharts. |
 | Analytical support | Exploratory file-level distributions and associations completed. Calendar, observation grain, entity attribution and some metric definitions remain unresolved. No verified health-system rankings or time trends. |
-| Documentation synchronization | Local findings/specification/reproduction records and Notion tasks updated. Eligible Git changes are ready for commit/push. |
+| Documentation synchronization | Local findings/specification/reproduction records and Notion tasks updated. Original scripts/docs and empty PBIP cleanup were committed and pushed in e39059f; remote commit and branch were verified. |
 | External submission | Not performed. |
 
 ## Artifacts and checks
@@ -25,10 +25,10 @@ Updated 5 November 2026. Current task: native Excel cleaning and PivotTable/Pivo
 
 The user-selected audit implementation was removed under a checked manifest: 57 existing targets, including the audit workbook, bulk releases, duplicate rebuilds and obsolete implementation code. Original CSVs, the complete organizer package and pre-existing user work were protected. The original PBIP filename and assets remain an empty project seed; MCP verified zero tables, measures and relationships. Cleanup evidence and one-time scripts are in `_analyst_workspace/outputs/project_cleanup/`.
 
-Notion project: https://app.notion.com/p/40d9b4688361819481d9ee3215ad2f0a. Nine focused tasks are complete; Git synchronization is in progress. Eleven former audit tasks are explicitly administratively cancelled, not claimed as delivered features.
+Notion project: https://app.notion.com/p/40d9b4688361819481d9ee3215ad2f0a. All ten focused Excel/documentation/tracking tasks are complete. Eleven former audit tasks are explicitly administratively cancelled, not claimed as delivered features.
 
-Repository: https://github.com/TheDataDisciple/DataDNA-2026-11-Health-Systems on `codex/health-system-readiness`. Raw data, workbooks, generated outputs, caches and the private registry remain excluded.
+Repository: https://github.com/TheDataDisciple/DataDNA-2026-11-Health-Systems on `codex/health-system-readiness`. Delivery commit: e39059f (feat: replace audit scope with native Excel cleaning and EDA). Raw data, workbooks, generated outputs, caches and the private registry remain excluded. Two pre-existing untracked working-copy scripts were preserved and deliberately not included.
 
 ## Next executable action
 
-Commit and verify the eligible source/doc changes on the existing branch. The Excel task itself is complete. Further health analysis requires corrected calendar/entity mappings, a defined observation grain and confirmed units from the data provider; do not resume the removed audit dashboard.
+The current Excel task is complete. Further health analysis requires corrected calendar/entity mappings, a defined observation grain and confirmed units from the data provider; do not resume the removed audit dashboard.
